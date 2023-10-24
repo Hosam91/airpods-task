@@ -18,9 +18,8 @@ function handleScroll()
     let opacity = 0;
     opacity = scrollY / 820
 
-    // firstText.style.transform = `matrix(1,0,0,1,0,300)`
-    const targetTransform = "matrix(1, 0, 0, 1, 0, 175)";
 
+ 
     //showing default picture and setting other pic's opacity to 0 
     if (scrollY === 0 )
     {
@@ -77,8 +76,9 @@ function handleScroll()
         thirdPic.style.opacity = opacity -.7
         
     }
-   
-   
+
+
+  
 }
 
 

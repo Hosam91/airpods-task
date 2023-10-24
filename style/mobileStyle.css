@@ -15,23 +15,33 @@
     }
     .texts {
         padding: .3rem;
-        font-size: 16px;
         display: block;
         position: relative;
         height: 100%;
 
     }
-    .texts p{
-        position: absolute;
-        top: 20%;
+    .texts p,.rightText{
+        position: fixed;
+        top: 15%;
         left: 50%;
+        transform: matrix(1,0,0,1,0,0);
         transform: translate(-50%, -50%);
+        z-index: 999;
+
     }
     .f-text{
         opacity: 1;
     }
     .s-text{
         opacity: 0;
+    }
+    .rightText{
+        font-size: 16px;
+        width: 100%;
+        padding: 1rem;
+        top: 10%;
+        opacity: 0;
+
     }
 }
 
