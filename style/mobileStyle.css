@@ -1,0 +1,43 @@
+
+
+@media screen and (max-width: 558px) {
+    .scrolledContainer{
+        margin-top: 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 30% 1fr;
+    }
+    .imgs >div {
+        padding: 5rem;
+    }
+
+    img{
+        object-fit: contain;
+    }
+    .texts {
+        padding: .3rem;
+        font-size: 16px;
+        display: block;
+        position: relative;
+        height: 100%;
+
+    }
+    .texts p{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .f-text{
+        opacity: 1;
+    }
+    .s-text{
+        opacity: 0;
+    }
+}
+
+ /* @media screen and (max-width: 768px) {
+    .scrolledContainer{
+        margin-top: 0;
+        grid-template-columns: 30% 70%;
+    }
+}  */
