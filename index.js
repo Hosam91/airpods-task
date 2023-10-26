@@ -23,7 +23,7 @@ function handleScroll()
     //showing default picture and setting other pic's opacity to 0 
     if (scrollY === 0 )
     {
-        firstPic.style.opacity = 1
+        firstPic.style.opacity = 0
         secondPic.style.opacity = 0
         thirdPic.style.opacity = 0
         firstText.style.opacity= 0
