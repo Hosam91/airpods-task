@@ -42,12 +42,16 @@ function handleScroll()
 
         firstPic.style.transform = `scale(${newSize/100})`;
         secondPic.style.transform = `scale(${newSize/100})`;
-        // firstPic.style.transform = `scale(${newSize/100})`;
+        thirdPic.style.transform = `scale(${newSize/100})`;
 
 
         //handle text opacity with first picture
        //handeld on scroll Y value
         firstText.style.opacity = opacity + .6
+        if (scrollY < 20 )
+        {
+            firstText.style.opacity= 0
+        }
         if (scrollY>=120 && scrollY<210)
         {
             firstText.style.opacity= 1
